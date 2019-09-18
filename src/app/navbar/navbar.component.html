@@ -1,0 +1,50 @@
+<div class="board-inner" id="status-buttons">
+    <ul class="nav nav-tabs" id="myTab">
+        <div class="liner"></div>
+                    
+        <li>
+            <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-toggle="tab" title="home">
+                <span class="round-tabs one">
+                    <i class="glyphicon glyphicon-home"></i>
+                </span>
+            </a>
+        </li>
+
+         <li>
+            <a routerLink="/pigeons" routerLinkActive="active" data-toggle="tab" title="pigeons">
+                <span class="round-tabs two">
+                    <i class="glyphicon glyphicon-th-list"></i>
+                </span> 
+            </a>
+        </li>
+
+        <li>
+            <a routerLink="/orderdetails" routerLinkActive="active" data-toggle="tab" title="orderDetails">
+                <span class="round-tabs three">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                </span>
+            </a>
+        </li>
+
+        <li>
+            <a routerLink="/submitorder" routerLinkActive="active" data-toggle="tab" title="confirm">
+                <span class="round-tabs four">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a routerLink="/completed" routerLinkActive="active" data-toggle="tab" title="completed">
+                <span class="round-tabs five">
+                    <i class="glyphicon glyphicon-ok"></i>
+                </span>
+            </a>
+        </li>
+                
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+<!-- Close the Splash screen -->
+<script src="../../assets/js/loading-bars.js"></script>

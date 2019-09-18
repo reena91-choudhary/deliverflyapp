@@ -1,0 +1,63 @@
+<form #completeForm="ngForm" class="editForm" novalidate>
+<div class="tab-pane fade in active">
+    <h3 class="head text-center">{{message}}</h3>
+    <div class='row'>
+        <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>
+            <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="name">Pigeon Selected: </label> 
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{order.deliveryPigeon.name }}
+                </div>
+            </div>
+            <div class="row">
+            	<div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="id">Pigeon id: </label> 
+                    </div>
+                </div>
+                 <div class='col-xs-9 col-sm-10'>
+                    {{order.deliveryPigeon.id }}
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="deliveryZip">Delivery ZipCode: </label> 
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{order.deliveryPinCode}}
+                </div>
+           </div>     
+            <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="pickupZip">PickUp ZipCode: </label> 
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{order.pickUpPinCode}}
+                </div>
+           </div>     
+           <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="packageType">PackageType: </label>
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{order.packageType}}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-success btn-outline-rounded" (click)="submitOrder()">Submit <span style="margin-left:10px;"></span></button>
+    </div>
+</div>
+</form>
